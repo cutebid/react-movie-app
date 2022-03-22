@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: 'DM Sans', sans-serif;
+}
+
+.app{
+.navbar{
+    background-color:  #292929;
+    height: 140px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 999;
+}
+.overlay {
+    position: relative;
+    overflow: hidden;
+    img{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+
+    }
+    &-text{
+        position: absolute;
+        top: 40%;
+        font-size: 3em;
+        line-height: 1.2;
+        color: white;
+    }
+}
+.categories{
+    overflow: scroll;
+
+    .category{
+        position: relative;
+        background-color: black;
+        &:hover{
+            transform: scale(1.1);
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            opacity: 0.4;
+        }
+        .text{
+            position: absolute;
+            top: 40%;
+            left: 30px;
+            color: white;
+        }
+    }
+}
+    ::-webkit-scrollbar {
+    display: none;
+}
+::-webkit-scrollbar-track {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    display: none;
+}
+}
